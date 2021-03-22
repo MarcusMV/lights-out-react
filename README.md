@@ -1,7 +1,3 @@
-LIGHTS OUT
-
-Unplug Proriasis
-
 ## LGIHTS OUT - Unplug Psoriasis 
 
 #### Project:
