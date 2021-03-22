@@ -38,7 +38,7 @@
   .header-right {
     float: right;
     padding-top: 45px;
-    padding-right: 0px;
+    padding-right: 150px;
     a {
       text-decoration: none;
       color: #8F8E8F;
@@ -48,13 +48,16 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 915px) {
   a {
     float: none;
     display: block;
     text-align: left;
   }
-  @media (max-width: 630px) {
+  .home-header .header-right {
+    padding-bottom: 20px;
+  }
+  @media (max-width: 765px) {
     .home-header .header-right {
       padding-top: 0px;
       padding-bottom: 20px;
