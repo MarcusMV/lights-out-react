@@ -1,10 +1,9 @@
-## LGIHTS OUT - Unplug Psoriasis 
 
-#### Project:
+#### LIGHTS OUT - Unplug Psoriasis :
 
-Frontend react application, built with React, Redux, JavaScript, and CSS.
+Frontend react application, built with React, JSX, and SCSS.
 
-## Installation and Setup Instructions
+## Installation and Setup Instructions :
 
 You will need node and npm installed globally on your machine.
 
