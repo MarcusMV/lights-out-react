@@ -1,0 +1,166 @@
+@mixin containerCenter($color, $image) {
+  background: $color;
+  background-image:url($image);
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin contentsCenter() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-header {
+  @include containerCenter(#ccc, './HEADER.png');
+  height: 100px;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #1F1D1F;
+  display: block;
+  .header-left {
+    float: left;
+    text-align: center;
+    .logo {
+      img {
+        width: 255px;
+        padding-top: 20px;
+        padding-left: 120px;
+      }
+    }
+  }
+  .header-right {
+    float: right;
+    padding-top: 45px;
+    padding-right: 100px;
+    a {
+      text-decoration: none;
+      color: #8F8E8F;
+      padding-right: 55px;
+    }
+  }
+}
+
+.home-body {
+  @include containerCenter(black, './HOME.jpg');
+  @include contentsCenter();
+  height: 90vh;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  .overlay-img {
+    margin-bottom: 0px;
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-shadow: 0 0 10px #FF9C48;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+}
+
+.home-info {
+  @include contentsCenter();
+  height: 100vh;
+
+  &.switch-on {
+    @include containerCenter(white, './DESIGN-ON.png');
+    color: rgb(0, 0, 0);
+    .info-container {
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        b {
+          color: #FD8414;
+        }
+      }
+      p {
+        width: 550px;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+  }
+  &.switch-off {
+    @include containerCenter(#0b0509, './DESIGN.png');
+    color: white;
+    .info-container {
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        color: #FFFFFF;
+        font-weight: 400;
+        text-shadow: 0 0 10px #FF9C48;
+      }
+      p {
+        width: 670px;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 0 0 10px #FF9C48;
+      }
+    }
+  }
+  .switch-container {
+    img {
+      height: 68px;
+      padding-top: 45px;
+      padding-bottom: 25px;
+      text-align: center;
+      cursor: pointer;
+    }
+    h5 {
+      margin-top: 0px;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+.fade-in:active {
+	opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
