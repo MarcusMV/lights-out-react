@@ -16,7 +16,7 @@
 }
 
 .home-header {
-  @include containerCenter(#ccc, './HEADER.png');
+  @include containerCenter(#ccc, './images/HEADER.png');
   //height: 100px;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
@@ -31,6 +31,7 @@
       img {
         width: 255px;
         padding-top: 20px;
+        padding-bottom: 10px;
         //padding-left: 120px;
       }
     }
@@ -69,7 +70,7 @@
 
 .home-body {
   @include contentsCenter();
-  @include containerCenter(black, './HOME.jpg');
+  @include containerCenter(black, './images/HOME.jpg');
   height: 90vh;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
   .body-container {
@@ -100,7 +101,7 @@
   height: 100vh;
 
   &.switch-on {
-    @include containerCenter(white, './DESIGN-ON.png');
+    @include containerCenter(white, './images/DESIGN-ON.png');
     color: rgb(0, 0, 0);
     .info-container {
       text-align: center;
@@ -121,7 +122,7 @@
     }
   }
   &.switch-off {
-    @include containerCenter(#0b0509, './DESIGN.png');
+    @include containerCenter(#0b0509, './images/DESIGN.png');
     color: white;
     .info-container {
       text-align: center;

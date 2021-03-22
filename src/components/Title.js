@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import down_arrow from '../ARROW-DOWN.png';
+import down_arrow from '../images/ARROW-DOWN.png';
 import Switch from './Switch'
 
 export const Title = () => {

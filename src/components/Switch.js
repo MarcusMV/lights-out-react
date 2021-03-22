@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import switch_img from '../SWITCH.png';
-import switch_reset from '../RESET.png';
+import switch_img from '../images/SWITCH.png';
+import switch_reset from '../images/RESET.png';
 
 export const Switch = ({ data }) => {
     const [isSwitchOn, setSwitched] = useState(false)
