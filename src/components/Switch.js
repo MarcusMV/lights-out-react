@@ -8,7 +8,7 @@ export const Switch = ({ data }) => {
 
     return (
         <section className={`home-info fade-in ${isSwitchOn ? 'switch-on' : 'switch-off'}`}>
-          <div className={'info-container'}>
+          <div className='info-container'>
             {isSwitchOn ? <h2>FOR <b>GREATER</b> CLARITY...</h2> : <h2><b>TURN OFF</b> THE LIGHTS ON PSORIASIS...</h2>}
             <p>{isSwitchOn ? "As we shed light on the intricacies of psoriasis pathogenesis, we now know that other proinflammatory cytokines supplement the IL-17/23 axis and charge the immune cells in circulation." 
             : "The complex immunopathogenic mechanisms driving psoriasis involve interactions between keratinocytes and immune cells, overloading the cycle of inflammation that keeps patients plugged into their psoriasis – bound by skin plaques causing clinical symptoms of pain, itching, and burning sensations."}</p>
